@@ -18,9 +18,12 @@ while True:
         os.system("clear")
         print(ans)
     if dey == '/':
-        ans = x / y
-        os.system("clear")
-        print(ans)
+        if y == 0:
+            print('На ноль делить нельзя')
+        else:
+            ans = x / y
+            os.system("clear")
+            print(ans)
     if dey == '*':
         ans = x * y
         os.system("clear")
