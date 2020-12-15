@@ -108,6 +108,6 @@ ans = int(input())
 while ans != 1:
     print('Дормаму, я пришел договориться')
     ans = int(input())
-    print('Вот и решили) Спасибо большое! Хорошего вам дня!(o･ω･o)')
+print('Вот и решили) Спасибо большое! Хорошего вам дня!(o･ω･o)')
 base_new = [base, name, age, number]
 print(base_new)
