@@ -1,0 +1,50 @@
+d = {'Tashkent': ['Anya', 'Roma'],
+     'Moscow': 'Makhmood'}
+print(d['Tashkent'])
+
+
+
+
+
+database = {'Name': ['Anya', 'Roma'],
+            'Age': [19,23],
+            'Gender': ['fem', 'male']}
+print(database['Age'])
+
+
+
+
+database = {'Name': ['Anya', 'Roma'],
+            'Age': [19,23],
+            'Gender': ['fem', 'male']}
+
+names = database['Name']
+age = database['Age']
+gender = database['Gender']
+
+new_name = input('Enter your name: ')
+new_age = int(input('Enter your age: '))
+new_gender = input('Enter your gender: ')
+
+database['Name'] = names + [new_name]
+database['Age'] = age + [new_age]
+database['Gender'] = gender + [new_gender]
+
+print(database)
+print(database.keys())
+print(database.values())
+
+for key in database.keys():
+    vals = database[key]
+    print(vals[0])
+
+
+
+
+database = {'how much?': 115,
+            'hi': 'hi',
+            'good bye': 'bye'}
+while True:
+    user_key = input('What would you like yo know?: ').lower()
+    print(database[user_key])
+
